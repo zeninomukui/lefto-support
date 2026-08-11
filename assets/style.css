@@ -1,0 +1,184 @@
+/* PocketMoney サポートサイト共通スタイル */
+/* 外部フォント・外部ライブラリは使用しない */
+
+:root {
+  color-scheme: light dark;
+  --color-bg: #ffffff;
+  --color-text: #1c1c1e;
+  --color-text-secondary: #636366;
+  --color-link: #007aff;
+  --color-border: #e5e5ea;
+  --color-header-bg: #f9f9fb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #000000;
+    --color-text: #f2f2f7;
+    --color-text-secondary: #98989f;
+    --color-link: #0a84ff;
+    --color-border: #38383a;
+    --color-header-bg: #1c1c1e;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  line-height: 1.7;
+  word-break: break-word;
+}
+
+.site-header {
+  background-color: var(--color-header-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-header .header-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+}
+
+.site-title {
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.site-nav a {
+  color: var(--color-link);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 40px 0 12px;
+}
+
+p {
+  margin: 0 0 16px;
+  font-size: 16px;
+}
+
+ul {
+  margin: 0 0 16px;
+  padding-left: 1.4em;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+a {
+  color: var(--color-link);
+}
+
+.qa-item {
+  margin-bottom: 24px;
+}
+
+.qa-item .q {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.qa-item .a {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.meta-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.meta-list li {
+  font-size: 15px;
+}
+
+.top-lead {
+  font-size: 17px;
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+}
+
+.top-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.top-links a {
+  display: block;
+  padding: 16px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.top-links a:hover {
+  background-color: var(--color-header-bg);
+}
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 24px 20px 40px;
+}
+
+.site-footer .footer-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.site-footer a {
+  color: var(--color-text-secondary);
+}
